@@ -18,7 +18,7 @@ Overall, **there lacks a level of consistency.**
 
 ### Is there a way that we can introduce consistency into this process?
 
-## The Solution: Make Privacy Policies Universally Consistent
+## The Solution: **Make Privacy Policies Universally Consistent**
 ### But... how?
 This is the problem our project aims to tackle!
 
