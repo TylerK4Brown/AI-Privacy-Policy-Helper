@@ -11,7 +11,7 @@ Please follow these short steps to get this set up!
 4. Once the model is created, try running main.py and see if it works!
 
 ##
-**In this file, we can edit a few different things about our model:**
+**In the ``policy-summarizer`` file, we can edit a few different things about our model:**
 
 1. Which model we'll be using (right now it is set to cogito:8b - you can try out other models by visiting [this website](https://ollama.com/search)).
 2. The context window of the model - how many tokens it can use to generate its next token
