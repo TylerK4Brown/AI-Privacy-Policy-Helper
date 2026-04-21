@@ -1,0 +1,13 @@
+# This is the base model
+FROM cogito:8b
+# sets the temperature to 1 [higher is more creative, lower is more coherent]
+PARAMETER temperature 1
+# sets the context window size to 4096, this controls how many tokens the LLM can use as context to generate the next token
+# PARAMETER num_ctx 4096
+# sets a custom system message to specify the behavior of the chat assistant
+# We will build on this file eventually, but for now this is good enough.
+SYSTEM """You are a Privacy Policy Summarizer
+
+You will receive a few paragraphs which corresponds to a section of a privacy policy.
+Your job is to make the section as clear and as concise as possible, without losing important privacy context.
+"""
