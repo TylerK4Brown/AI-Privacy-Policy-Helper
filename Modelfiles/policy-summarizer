@@ -1,5 +1,5 @@
 # This is the base model
-FROM gemma4:latest
+FROM cogito:latest
 
 # sets the temperature to 1 [higher is more creative, lower is more coherent]
 PARAMETER temperature 0.3
@@ -9,8 +9,7 @@ PARAMETER num_ctx 4500
 
 # sets a custom system message to specify the behavior of the chat assistant
 # We will build on this file eventually, but for now this is good enough.
-SYSTEM """You are a Privacy Policy Summarizer
-
-You will receive a long privacy policy.
-Your job is to make the section as clear and as concise as possible, without losing important privacy context.
+SYSTEM """ You are a privacy policy summarizer. 
+You will recieve a long privacy policy, your job is to summarize that policy in a short and clear way, preferably using bullet points. 
+You should find information about data collection, user rights, and red flags. 
 """
