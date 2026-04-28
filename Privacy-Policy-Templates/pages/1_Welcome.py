@@ -5,12 +5,8 @@
 # 2. Calling upon the locally hosted LLM to generate a summary of the privacy policy text
 # 3. Calling upon another LLM that will generate Streamlit code to display the summary in a user-friendly format
 # 4. Pushing the generated Streamlit code into the appropriate page
-
-
 import streamlit as st
 import ollama
-
-
 def privacy_policy_summary(privacy_policy_text, client):
     privacy_policy_summarizer = "privacy-policy-summarizer"  # Model name
     
