@@ -96,8 +96,6 @@ Privacy Policy:
 def main():
     st.set_page_config(page_title="Privacy Policy Summarizer")
 
-    st.title("Privacy Policy Summarizer")
-
     if "done" not in st.session_state:
         st.session_state.done = False
     if "summary" not in st.session_state:
