@@ -20,9 +20,6 @@ pages = {
         st.Page("pages/2_Nutrition_Label_Template.py"),
         st.Page("pages/3_Tabular_Format_Template.py")
     ],
-    "JSON Visualizer": [
-        st.Page("pages/4_JSONTester.py", title="JSON Tester Page")
-    ]
 }
 
 # Instantiates the navigation so it can be displayed on the landing page
