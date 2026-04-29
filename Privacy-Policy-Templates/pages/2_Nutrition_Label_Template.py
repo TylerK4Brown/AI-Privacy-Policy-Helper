@@ -23,7 +23,7 @@ with grid_example.expander("🔒 Data privacy", expanded=True):
     # It's considered "unsafe" due to cross-site scripting attacks
     # ^^^ We're not using any user input in this HTML, so we won't have to worry about this
     # This applies to all columns that are created
-    st.markdown("""
+    st.markdown(f"""
                 <h1 style='text-align: center;'>
                     <u>Nutrition Label Template</u>
                 </h1>
@@ -32,7 +32,7 @@ with grid_example.expander("🔒 Data privacy", expanded=True):
         </p>
                 """, unsafe_allow_html=True)
 with grid_example.expander("🔍 Data collection", expanded=True):
-    st.markdown("""
+    st.markdown(f"""
                  <h2 style='text-align: center;'><u>Data Collection</u></h2>
         <p style='text-align: center; font-size: 15px;'>
             {summary.get("data_collection", "Not specified")}
