@@ -152,7 +152,7 @@ TEXT:
     except Exception:
         return {k: "Error in section" for k in FIELDS}
 
-# ---------------- CLEAN MERGE (FIXED OUTPUT) ---------------- #
+# ---------------- CLEAN MERGE ---------------- #
 
 def merge_results(results: List[Dict]) -> Dict:
     combined = {k: [] for k in FIELDS}
