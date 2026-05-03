@@ -3,6 +3,7 @@
 # Rough draft at the moment, and will need a great deal of refining
 import streamlit as st
 from streamlit_extras.grid import grid
+import re
 
 st.set_page_config(page_title="Nutrition Label")
 st.title("Privacy Policy Nutrition Label")
@@ -16,6 +17,15 @@ if not summary:
 # First column has only 1 cell, second column has two cells, and the third column has 1 cell
 grid_example = grid(1, 2, 1, vertical_align="top")
 
+def to_bullets(text):
+    #Converts sentence string into bullet points.
+    if not text or text == "Not specified":
+        return "<p>Not specified</p>"
+
+    parts = re.split(r"\. |\.\n", text)
+    bullets = "\n".join([f"<li>{p.strip()}</li>" for p in parts if p.strip()])
+
+    return f"<ul>{bullets}</ul>"
 # Expander function creates a collapsible section in the streamlit app, which is useful for organizing content 
 # It also formats the content in a nice format that follows quite closely to the nutriton label format
 #🔒 Data privacy
@@ -29,7 +39,7 @@ with grid_example.expander("🔒 Data privacy", expanded=True):
                     <u>Nutrition Label Template</u>
                 </h1>
                  <p style='text-align: center; font-size: 15px;'>
-            {summary.get("data_usage", "Not specified")}
+            {to_bullets(summary.get("data_usage", "Not specified"))}
         </p
                 """, unsafe_allow_html=True)
  #🔍 Data collection
@@ -37,7 +47,7 @@ with grid_example.expander("🔍 Data collection", expanded=True):
     st.markdown(f"""
                  <h2 style='text-align: center;'><u>Data Collection</u></h2>
         <p style='text-align: center; font-size: 15px;'>
-            {summary.get("data_collection", "Not specified")}
+            {to_bullets(summary.get("data_collection", "Not specified"))}
         </p>
 
             """, unsafe_allow_html=True)
@@ -48,7 +58,7 @@ with grid_example.expander("🔗 Third Party Sharing", expanded=True):
     st.markdown(f"""
         <h2 style='text-align: center;'><u>Third Party Sharing</u></h2>
         <p style='text-align: center; font-size: 15px;'>
-            {summary.get("third_party_sharing", "Not specified")}
+            {to_bullets(summary.get("third_party_sharing", "Not specified"))}
         </p>
     """, unsafe_allow_html=True)
 
@@ -68,7 +78,7 @@ with grid_example.expander("⚖️ Your Rights", expanded=True):
     st.markdown(f"""
         <h2 style='text-align: center;'><u>User Rights</u></h2>
         <p style='text-align: center; font-size: 15px;'>
-            {summary.get("user_rights", "Not specified")}
+            {to_bullets(summary.get("user_rights", "Not specified"))}
         </p>
     """, unsafe_allow_html=True)
 
@@ -78,7 +88,7 @@ with grid_example.expander("⚠️ Key Risks", expanded=True):
     st.markdown(f"""
         <h2 style='text-align: center;'><u>Key Risks</u></h2>
         <p style='text-align: center; font-size: 15px;'>
-            {summary.get("key_risks", "Not specified")}
+            {to_bullets(summary.get("key_risks", "Not specified"))}
         </p>
     """, unsafe_allow_html=True)
 if st.button("⬅ Back", type="secondary"):
