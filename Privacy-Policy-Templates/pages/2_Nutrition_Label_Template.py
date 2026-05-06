@@ -15,7 +15,7 @@ if not summary:
     st.stop()
 # Assigns a grid layout to the page
 # First column has only 1 cell, second column has two cells, and the third column has 1 cell
-grid_example = grid(1, 2, 1, vertical_align="top")
+grid_example = grid(1, 2, 2, 1, vertical_align="top")
 
 def to_bullets(text):
     #Converts sentence string into bullet points.
