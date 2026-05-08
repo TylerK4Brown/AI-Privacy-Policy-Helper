@@ -48,5 +48,7 @@ table_format = {
 }
 
 st.table(table_format, height='content')
+if st.button("⬅ Back", type="secondary"):
+    st.switch_page("pages/1_Welcome.py")
 
 

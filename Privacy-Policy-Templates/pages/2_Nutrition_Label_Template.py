@@ -15,7 +15,7 @@ if not summary:
     st.stop()
 # Assigns a grid layout to the page
 # First column has only 1 cell, second column has two cells, and the third column has 1 cell
-grid_example = grid(1, 2, 2, 1, vertical_align="top")
+grid_example = grid(1, 2, 1, vertical_align="top")
 
 def to_bullets(text):
     #Converts sentence string into bullet points.
@@ -35,12 +35,10 @@ with grid_example.expander("🔒 Data privacy", expanded=True):
     # ^^^ We're not using any user input in this HTML, so we won't have to worry about this
     # This applies to all columns that are created
     st.markdown(f"""
-                <h1 style='text-align: center;'>
-                    <u>Nutrition Label Template</u>
-                </h1>
-                 <p style='text-align: center; font-size: 15px;'>
+               <h2 style='text-align: center;'><u>Data privacy</u></h2>
+        <p style='text-align: center; font-size: 15px;'>
             {to_bullets(summary.get("data_usage", "Not specified"))}
-        </p
+        </p>
                 """, unsafe_allow_html=True)
  #🔍 Data collection
 with grid_example.expander("🔍 Data collection", expanded=True):
@@ -68,7 +66,7 @@ with grid_example.expander("🛡️ Security", expanded=True):
     st.markdown(f"""
         <h2 style='text-align: center;'><u>Security</u></h2>
         <p style='text-align: center; font-size: 15px;'>
-            {summary.get("security", "Not specified")}
+            {to_bullets(summary.get("security", "Not specified"))}
         </p>
     """, unsafe_allow_html=True)
 
