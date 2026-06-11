@@ -1,6 +1,7 @@
 # Tabular Format Template page
 # We'll try to recreate the typical financial institution privacy policy tables
 # Something like this would be acceptable: https://www.consumerfinance.gov/rules-policy/regulations/1016/a/#ImageA1b
+# This page is still a HEAVY work in progress - it does not work right now, and that is for a reason
 import streamlit as st
 
 # Check to see if a user generated a summary yet

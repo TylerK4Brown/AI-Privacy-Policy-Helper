@@ -13,8 +13,8 @@ st.set_page_config(layout="wide")
 # Dictionary of lists, each list containing a section name and its corresponding page path.
 # this is displayed at the top of the screen
 pages = {
-    "Introduction": [
-        st.Page("pages/1_Welcome.py", title='Privacy Policy Summarizer')
+    "Generate Summary": [
+        st.Page("pages/1_Welcome.py", title='Privacy Policy Summary')
     ],
     "Privacy Policy Templates": [
         st.Page("pages/2_Nutrition_Label_Template.py"),
