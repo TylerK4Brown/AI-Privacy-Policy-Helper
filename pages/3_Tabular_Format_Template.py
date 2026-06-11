@@ -1,3 +1,7 @@
+# ---- NOTE ----
+# This page is not completed. It's a template for a potential future page that would present the summary in a tabular format.
+# This would give the user options as to how they would like their summary to be presented
+
 # Tabular Format Template page
 # We'll try to recreate the typical financial institution privacy policy tables
 # Something like this would be acceptable: https://www.consumerfinance.gov/rules-policy/regulations/1016/a/#ImageA1b
