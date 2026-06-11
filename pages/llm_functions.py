@@ -1,3 +1,7 @@
+# LLM functions module
+# This module handles all of the LLM calls and JSON schema validation for the application
+# This was originally in Welcome.py, but was moved to its own module to keep the code clean
+
 import json
 from pydantic import BaseModel
 
