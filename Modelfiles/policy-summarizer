@@ -1,14 +1,16 @@
-# DOCUMENTATION FOR PARAMETERS AND SYSTEM PROMPT ASSISTANCE
+# DOCUMENTATION FOR PARAMETERS AND SYSTEM PROMPT OPTIMIZATION ASSISTANCE
 # https://docs.ollama.com/modelfile
-# Base model
-FROM qwen2.5:14b
+
+# Base model used for generation
+# cogito:8b is the default model since this is the smallest model that picks up on the most context without hallucination of instruction
+# Best model performance - qwen2.5:14b (smallest model that picks up on the most context)
+FROM cogito:8b
 
 # Controls randomness (0 = more deterministic)
 PARAMETER temperature 0
-# Limit pool of tokens that the model considered for the next word
-PARAMETER top_k 20
 
 # Context window for the model, how much text can be read/remembered at once
+# Default is 4096, worth playing around with though
 PARAMETER num_ctx 4096
 
 SYSTEM """

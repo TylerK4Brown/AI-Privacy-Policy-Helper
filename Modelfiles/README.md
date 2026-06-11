@@ -7,7 +7,7 @@ Please follow these short steps to get this set up!
 
 1. Open a command prompt window. Navigate to the Modelfiles directory in your command prompt
 2. Run this command: ``ollama create privacy-policy-summarizer -f ./policy-summarizer``
-3. The model cogito:8b should begin installing on your machine. This can take a little while.
+3. The model qwen3.5:0.8b should begin installing on your machine. This model is small, so it shouldn't take long, but it could take a while depending on the machine you're running this off of.
 4. Once the model is created, try running main.py and see if it works!
 
 ##
