@@ -1,10 +1,7 @@
 # Landing Welcome page
 import streamlit as st
-import ollama
 import pages.llm_functions as llm_functions
-
-# Instantiate the Ollama client
-client = ollama.Client()
+import json
 
 # Introductory text for the landing page
 st.markdown("""
@@ -69,7 +66,7 @@ if st.session_state.disabled_summary_button:
     # Store the summary in the session state
     st.session_state.disabled_summary_button = True
     with st.spinner("Generating summary..."):
-        st.session_state.summary = llm_functions.privacy_policy_summary(privacy_policy_text, client)
+        st.session_state.summary = llm_functions.privacy_policy_summary(privacy_policy_text)
 
 # Only display a summary if the json_generated session state flag is true
 if st.session_state.summary:
@@ -79,7 +76,7 @@ if st.session_state.summary:
 # If the summary was generated and the webpage JSON hasn't been generated yet, generate the webpage JSON and store it in the session state
 if st.session_state.summary and len(st.session_state.webpage_json) == 0:
     with st.spinner("Generating webpage JSON..."):
-        st.session_state.webpage_json = llm_functions.webpage_generator(st.session_state.summary, client)
+        st.session_state.webpage_json = llm_functions.webpage_generator(json.dumps(st.session_state.summary))
 
 # If the webpage JSON was generated, display it on screen for testing
 if len(st.session_state.webpage_json) > 0:
