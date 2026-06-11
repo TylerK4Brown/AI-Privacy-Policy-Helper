@@ -3,7 +3,7 @@ A tool aimed to assist users with reading privacy policies.
 
 ## Problem Domain: *The Privacy Policy*
 Privacy policies are, simply put, important. 
-- Companies stay legally compliant by disclosing necessary privacy information to the user .
+- Companies stay legally compliant by disclosing necessary privacy information to the user.
 - The user is prompted to agree to the statements in this policy.
 
 But still, many users opt to not read a privacy policy.
