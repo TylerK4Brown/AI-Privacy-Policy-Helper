@@ -1,6 +1,9 @@
 # AI-Privacy-Policy-Helper
 A tool aimed to assist users with reading privacy policies.
 
+# Setup
+If you're setting up this application for the first time, navigate to the [Modelfiles directory](./Modelfiles/) and read the README.md to get started!
+
 ## Problem Domain: *The Privacy Policy*
 Privacy policies are, simply put, important. 
 - Companies stay legally compliant by disclosing necessary privacy information to the user.

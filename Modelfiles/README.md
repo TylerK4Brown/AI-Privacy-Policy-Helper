@@ -1,7 +1,7 @@
 # Purpose of this folder
 Modelfiles are how we will prompt engineer our LLM.
 # IMPORTANT FIRST STEP!!
-### **You will not be able to use the program if you do not have an LLM created on your system named "privacy-policy-summarizer" and "webpage-generator**.
+### **You will not be able to use the program if you do not have LLMs created on your system named "privacy-policy-summarizer" and "webpage-generator**.
 
 Please follow these short steps to get this set up!
 
