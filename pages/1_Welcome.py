@@ -32,7 +32,10 @@ st.markdown("""
             </h2>
             
             <p style='text-align: center; font-size: 20px;'>
-                This tool is designed to help you easily understand privacy policies by introducing <i>consistency</i> into the process!
+                This tool is designed to help you easily understand privacy policies by introducing <i>consistency</i> into the process! <br /><br />
+                Enter the text of any privacy policy, and our AI model will generate a concise summary of the most important information.<br /><br />
+                This summary will then be used to generate a webpage template to view that information in a more digestible format.<br /><br />
+                <b>This webpage template will be the same for every privacy policy</b>, so you can always know where to find the information you care about.
 """, unsafe_allow_html=True)
 # ---------------- JSON PARSER ---------------- #
 
