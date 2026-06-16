@@ -18,7 +18,6 @@ pages = {
     ],
     "Privacy Policy Templates": [
         st.Page("pages/2_Nutrition_Label_Template.py"),
-        st.Page("pages/3_Tabular_Format_Template.py")
     ],
 }
 
