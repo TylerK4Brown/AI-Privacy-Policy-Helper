@@ -3,9 +3,14 @@ Modelfiles are how we will prompt engineer our LLM.
 # IMPORTANT FIRST STEP!!
 ### **You will not be able to use the program if you do not have LLMs created on your system named "privacy-policy-summarizer" and "webpage-generator"**.
 
-Please follow these short steps to get this set up!
+## Ollama Setup
+1. Navigate to [Ollama's website](https://ollama.com/).
+2. Scroll down to the very bottom of the page and click on the "Download" button. Follow all instructions for installation.
+3. Open a terminal window and type `ollama --version`. If a version shows up after running this command, you've successfully installed Ollama!
+4. Follow the "LLM Setup" steps below.
 
-1. Open a command prompt window. Navigate to the Modelfiles directory in your command prompt
+## LLM Setup
+1. Open a command prompt window. Navigate to the Modelfiles directory in your command prompt.
 2. Run this command: ``ollama create privacy-policy-summarizer -f ./policy-summarizer``
 3. The model cogito:8b should begin installing on your machine. Depending on the system you are downloading this model on, this could take a while.
 4. Once the model is installed, run the command ``ollama list`` to ensure that the ``privacy-policy-summarizer`` model has been successfully installed.
