@@ -4,7 +4,7 @@ After running `streamlit run home.py`, click on the first localhost link. You sh
 
 <img width="2494" height="1245" alt="Screenshot 2026-06-16 183747" src="https://github.com/user-attachments/assets/6f5db90c-6a66-44e1-bc7c-d7decae2a41d" />
 
-Enter some privacy policy text into the text box. [We've provided somesample privacy policy texts in the PrivacyPolicies directory](PrivacyPolicies/). Feel free to use these, or find your own privacy policy text to test out!
+Enter some privacy policy text into the text box. [We've provided some sample privacy policy texts in the PrivacyPolicies directory](PrivacyPolicies/). Feel free to use these, or find your own privacy policy text to test out!
 
 After you finish entering the text into the text box, click on the Generate Summary button. **Since this LLM is being hosted locally, the speed of the generated responses will vary based on your computer's hardware.**
 
